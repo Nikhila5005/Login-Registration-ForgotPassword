@@ -153,5 +153,6 @@ public class UserController {
         resetPasswordService.resetPassword(token, password);
         return "redirect:/login"; // Redirect to the login page after successful password reset
     }
-
 }
+
+

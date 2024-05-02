@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Reset Password</title>
@@ -66,15 +66,19 @@
     <h2>Reset Password</h2>
     <p>Please enter your new password below to reset your password.</p>
 
+
     <form action="/resetpw" method="post">
+        <input type="hidden" name="token" th:value="${token}" />
+
         <div>
             <label for="password">New Password:</label>
             <input type="password" id="password" name="password" required>
         </div>
         <div>
-            <label for="confirm_password">Confirm Password:</label>
-            <input type="password" id="confirm_password" name="confirm_password" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
         </div>
+
         <div>
             <input type="submit" value="Reset Password">
         </div>
@@ -83,3 +87,4 @@
 
 </body>
 </html>
+
