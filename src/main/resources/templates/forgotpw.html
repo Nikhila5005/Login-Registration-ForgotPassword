@@ -8,20 +8,21 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
-            background-color: #f7f7f7; /* Background color for the page */
+            background-image: url('https://img.freepik.com/free-photo/side-view-woman-using-virtual-reality-headset_23-2148598108.jpg?t=st=1714648039~exp=1714651639~hmac=75165c11138577be277aa63f4fcaf3b6eb51f5e1e449690e910895d6b33c3790&w=740');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .content {
-            background-color: #fff; /* Background color for the form */
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             width: 300px;
-            text-align: center;
+            text-align: left; /* Align content to the left */
+            margin-left: 20px; /* Add some margin to the left */
         }
 
         h2 {
@@ -33,6 +34,7 @@
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
+            color: #555;
         }
 
         input[type="email"] {
@@ -47,7 +49,7 @@
         input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #4caf50;
+            background-color: #2ecc71;
             color: white;
             border: none;
             border-radius: 4px;
@@ -56,7 +58,7 @@
         }
 
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #27ae60;
         }
     </style>
 </head>
@@ -64,7 +66,7 @@
 
 <div class="content">
     <h2>Forgot Password</h2>
-    <p>Please enter your email address below and we'll send you instructions on how to reset your password.</p>
+    <p>Please enter your email address below, and we'll send you instructions on how to reset your password.</p>
 
     <form action="/forgotpassword" method="post">
         <div>

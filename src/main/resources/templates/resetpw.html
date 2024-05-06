@@ -12,11 +12,14 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f7f7f7; /* Background color for the page */
+            background-image: url('https://img.freepik.com/free-vector/abstract-secure-technology-background_23-2148357087.jpg?t=st=1714919658~exp=1714923258~hmac=68a10ced6755c75ea93d2ba01f73f3cf3a363c36a9fe7a1bfd82375f169e3706&w=826');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .content {
-            background-color: #fff; /* Background color for the form */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the form */
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -66,7 +69,6 @@
     <h2>Reset Password</h2>
     <p>Please enter your new password below to reset your password.</p>
 
-
     <form action="/resetpw" method="post">
         <input type="hidden" name="token" th:value="${token}" />
 
@@ -87,4 +89,3 @@
 
 </body>
 </html>
-
